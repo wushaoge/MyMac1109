@@ -1,5 +1,6 @@
 package com.wsgmac1105.demo;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -13,16 +14,26 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class MainActivity extends AppCompatActivity{
+import com.lidroid.xutils.util.LogUtils;
+import com.wsgmac1105.demo.activity.BaseActivity;
+import com.wsgmac1105.demo.entity.AnyEvent;
+import com.wsgmac1105.demo.fragment.LeftFragment;
+import com.wsgmac1105.demo.fragment.MainFragment;
+
+import org.simple.eventbus.Subscriber;
 
 
+public class MainActivity extends BaseActivity {
 
+
+    Toolbar toolbar;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.getTitle();
         setSupportActionBar(toolbar);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -31,9 +42,18 @@ public class MainActivity extends AppCompatActivity{
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
-
+        replaceFragment(R.id.frame_main, new MainFragment());
+        replaceFragment(R.id.fragme_left, new LeftFragment());
 
     }
+
+
+    @Subscriber(tag = "rgb")
+    private void getSubRgb(int rgb){
+        LogUtils.e("颜色值为" + rgb);
+        toolbar.setBackgroundColor(rgb);
+    }
+
 
     @Override
     public void onBackPressed() {
