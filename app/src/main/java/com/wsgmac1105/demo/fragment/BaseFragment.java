@@ -37,7 +37,9 @@ public class BaseFragment extends Fragment {
     }
 
 
-
+    public String getPageTitle(){
+        return "";
+    }
 
 
 

@@ -342,7 +342,6 @@ public class WSGPagerSlidingTabStrip extends HorizontalScrollView {
 
         @Override
         public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-            LogUtils.e("onPageScrolled");
             currentPosition = position;
             currentPositionOffset = positionOffset;
 
@@ -357,7 +356,6 @@ public class WSGPagerSlidingTabStrip extends HorizontalScrollView {
 
         @Override
         public void onPageScrollStateChanged(int state) {
-            LogUtils.e("onPageScrollStateChanged");
             if (state == ViewPager.SCROLL_STATE_IDLE) {
                 scrollToChild(pager.getCurrentItem(), 0);
             }
@@ -369,7 +367,6 @@ public class WSGPagerSlidingTabStrip extends HorizontalScrollView {
 
         @Override
         public void onPageSelected(int position) {
-            LogUtils.e("onPageSelected");
             selectedPosition = position;
             updateTabStyles();
             if (delegatePageListener != null) {

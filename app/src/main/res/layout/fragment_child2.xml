@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    >
+
+    <com.wsgmac1105.demo.view.FirstGroupView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/lightgoldenrodyellow"
+        >
+
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:background="@color/violet"
+            />
+
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="1"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:background="@color/goldenrod"
+            />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="2"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:background="@color/darkviolet"
+            />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="3"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:background="@color/chartreuse"
+            />
+
+
+
+
+
+
+
+
+
+
+    </com.wsgmac1105.demo.view.FirstGroupView>
+
+
+
+
+
+</LinearLayout>
+
