@@ -14,6 +14,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 /**
+ * 滑动布局
  * Created by wushaoge on 15/11/12.
  */
 public class ChildFragment1 extends BaseFragment {

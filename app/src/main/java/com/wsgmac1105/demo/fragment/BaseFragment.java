@@ -9,6 +9,8 @@ import android.view.ViewGroup;
 
 import org.simple.eventbus.EventBus;
 
+import butterknife.ButterKnife;
+
 
 /**
  * Created by wushaoge on 15/11/12.
@@ -18,7 +20,9 @@ public class BaseFragment extends Fragment {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
+
     }
 
 

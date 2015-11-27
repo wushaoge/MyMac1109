@@ -3,12 +3,72 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
-    <ImageView
-        android:id="@+id/iv_image"
-        android:layout_width="wrap_content"
+    <com.wsgmac1105.demo.view.FlowLayout
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        />
+        android:layout_marginTop="40dp"
+        >
+
+        <TextView
+            style="@style/text_falg_01"
+            android:text="welcome"
+            />
+
+        <TextView
+            style="@style/text_falg_01"
+            android:text="goodgood"
+            />
+
+        <TextView
+            style="@style/text_falg_01"
+            android:text="刘邦"
+            />
+
+        <TextView
+            style="@style/text_falg_01"
+            android:text="樊哙"
+            />
+
+        <TextView
+            style="@style/text_falg_01"
+            android:text="魔鬼"
+            />
+
+        <TextView
+            style="@style/text_falg_01"
+            android:text="遇见恶魔"
+            />
+
+        <TextView
+            style="@style/text_falg_01"
+            android:text="弗兰迪"
+            />
+
+        <TextView
+            style="@style/text_falg_01"
+            android:text="黑色星期五"
+            />
+
+        <TextView
+            style="@style/text_falg_01"
+            android:text="狂想曲"
+            />
+
+
+        <TextView
+            style="@style/text_falg_01"
+            android:text="卖血哥"
+            />
+
+        <TextView
+            style="@style/text_falg_01"
+            android:text="走在冷风中"
+            />
+
+    </com.wsgmac1105.demo.view.FlowLayout>
+
+
+
 
 
 </LinearLayout>

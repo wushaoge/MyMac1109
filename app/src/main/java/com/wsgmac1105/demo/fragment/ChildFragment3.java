@@ -13,14 +13,13 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 /**
+ * flowlayout
  * Created by wushaoge on 15/11/12.
  */
 public class ChildFragment3 extends BaseFragment {
 
     private final String TITLE = "工作";
 
-    @Bind(R.id.iv_image)
-    ImageView ivImage;
 
 
     @Nullable
@@ -29,7 +28,6 @@ public class ChildFragment3 extends BaseFragment {
         View view = inflater.inflate(R.layout.fragment_child3, null);
         ButterKnife.bind(this, view);
 
-        ivImage.setBackgroundResource(R.drawable.wsg04);
 
         return view;
     }

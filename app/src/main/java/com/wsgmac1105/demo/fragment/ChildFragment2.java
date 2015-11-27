@@ -16,6 +16,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 /**
+ * 自定义viewgroup
  * Created by wushaoge on 15/11/12.
  */
 public class ChildFragment2 extends BaseFragment {
