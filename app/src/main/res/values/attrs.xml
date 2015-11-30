@@ -5,4 +5,13 @@
         <attr name="exampleColor" format="color" />
         <attr name="exampleDrawable" format="color|reference" />
     </declare-styleable>
+
+
+
+
+    <declare-styleable name="DragLoginView2">
+        <attr name="isOpen" format="boolean" />
+    </declare-styleable>
+
+
 </resources>
